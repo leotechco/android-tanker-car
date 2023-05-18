@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="@color/colorPrimary">
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="@color/colorGris">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="304dp"
+                android:src="@drawable/fcs" />
+        </LinearLayout>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/haircut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="261dp"
+                android:layout_marginRight="16dp"
+                android:background="@android:color/background_light"
+                android:elevation="4dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#ffffff"
+                        card_view:cardCornerRadius="8dp"
+                        card_view:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorGris"
+                                android:padding="5dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_vender" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="Vender"
+                                    android:textColor="#333"
+                                    android:textSize="14sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/buttonVender"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/border_complet"
+                                        android:drawablePadding="0dp"
+                                        android:elevation="2dp"
+                                        android:text="Ir"
+                                        android:textAlignment="center"
+                                        android:textColor="@android:color/background_light"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#ffffff"
+                        card_view:cardCornerRadius="8dp"
+                        card_view:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageiv"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorGris"
+                                android:padding="5dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_informe" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/textViewiv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="Informe de Ventas"
+                                    android:textColor="#333"
+                                    android:textSize="14sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/buttonInforme"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/border_complet"
+                                        android:drawablePadding="0dp"
+                                        android:elevation="2dp"
+                                        android:text="Ir"
+                                        android:textAlignment="center"
+                                        android:textColor="@android:color/background_light"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#ffffff"
+                        card_view:cardCornerRadius="8dp"
+                        card_view:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imagec"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorGris"
+                                android:padding="5dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_configuracion" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/textViewc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="Configurar"
+                                    android:textColor="#333"
+                                    android:textSize="14sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/buttonConfigurar"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/border_complet"
+                                        android:drawablePadding="0dp"
+                                        android:elevation="2dp"
+                                        android:text="Ir"
+                                        android:textAlignment="center"
+                                        android:textColor="@android:color/background_light"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#ffffff"
+                        card_view:cardCornerRadius="8dp"
+                        card_view:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imagesv"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorGris"
+                                android:padding="5dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_sincronizar" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/textViewsv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="Sincronizar Ventas"
+                                    android:textColor="#333"
+                                    android:textSize="14sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/buttonSincronizarVentas"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/border_complet"
+                                        android:drawablePadding="0dp"
+                                        android:elevation="2dp"
+                                        android:text="Ir"
+                                        android:textAlignment="center"
+                                        android:textColor="@android:color/background_light"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingBottom="16dp"-->
+    <!--android:paddingTop="16dp"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--tools:context="com.fcs.carrotaller.activities.MainActivity">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textTitulo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Escoja una Opción"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textStyle="bold"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonVender"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Vender"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_above="@+id/buttonSincronizarVentas"-->
+        <!--android:layout_alignStart="@+id/buttonSincronizarVentas"-->
+        <!--android:layout_marginBottom="48dp"-->
+        <!--android:layout_alignEnd="@+id/buttonSincronizarVentas" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonInforme"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Informe de Ventas"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--android:layout_below="@+id/buttonSincronizarVentas"-->
+        <!--android:layout_alignStart="@+id/buttonSincronizarVentas"-->
+        <!--android:layout_alignEnd="@+id/buttonSincronizarVentas" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonSincronizarVentas"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Sincronizar Ventas"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonConfigurar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Configurar"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_below="@+id/buttonInforme"-->
+        <!--android:layout_alignStart="@+id/buttonInforme"-->
+        <!--android:layout_marginTop="45dp"-->
+        <!--android:layout_alignEnd="@+id/buttonInforme" />-->
+
+<!--</RelativeLayout>-->

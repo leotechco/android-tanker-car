@@ -12,6 +12,7 @@ App in Java to control fuel sales in a Tank Car
     - Shipping sales.
     - Initial configurations.
     - Turn cut.
+- Printing receipts on a Bluetooth printer
 
 
       

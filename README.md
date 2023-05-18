@@ -8,11 +8,11 @@ App in Java to control fuel sales in a Tank Car
       - Pause Tanking.
       - Receive information from the iButton reading.
 - Through web services, it receives and sends information to the server to perform the following actions: 
-- Customer identification.
-- Shipping sales.
-- Initial configurations.
-- Turn cut.
       - Customer identification.
       - Shipping sales.
       - Initial configurations.
       - Turn cut.
+- 
+
+
+      
